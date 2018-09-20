@@ -12,5 +12,13 @@ def generate_data(datasets_name, test_size=0.33, random_state=0):
                                               random_state=random_state)
     return x_tr, x_te, y_tr, y_te
 
+def main():
+    x_tr, x_te, y_tr, y_te = generate_data('iris')
+    print 'train_label:'
+    print y_tr
+    print 'test_label:'
+    print y_te
+
+
 if __name__ == '__main__':
     main()
